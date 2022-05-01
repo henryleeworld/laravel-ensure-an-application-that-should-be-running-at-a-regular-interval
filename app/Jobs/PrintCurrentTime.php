@@ -36,7 +36,6 @@ class PrintCurrentTime implements ShouldQueue
             $this->defibrillate();
             return;
         }
-
         // Regular processing
         $this->defibrillate();
         echo Carbon::now()->format('Y-m-d H:i:s') . PHP_EOL;

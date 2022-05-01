@@ -1,4 +1,4 @@
-# Laravel 8 確保應用程式應該定期運行
+# Laravel 9 確保應用程式應該定期運行
 
 引入 dyrynda 的 laravel-defibrillator 套件來擴增確保應用程式應該定期運行，同時協助追踪應用程式中預期定期調用的各個元件。
 
@@ -16,10 +16,13 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
-- 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
+- 執行 __Artisan__ 指令的 __schedule:run__ 來衡量排定的任務並執行預定任務。
+```sh
+$ php artisan schedule:run
+```
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/LAygDwS.png)
-> 設定區間為 1 秒來檢測區間是否有遵守
+![](https://i.imgur.com/jvlZUXe.png)
+> 在正常操作範圍內，任務排程將每 60 秒執行一次，並將快取值再推送 90 秒
