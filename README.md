@@ -1,4 +1,4 @@
-# Laravel 9 確保應用程式應該定期運行
+# Laravel 10 確保應用程式應該定期運行
 
 引入 dyrynda 的 laravel-defibrillator 套件來擴增確保應用程式應該定期運行，同時協助追踪應用程式中預期定期調用的各個元件。
 
